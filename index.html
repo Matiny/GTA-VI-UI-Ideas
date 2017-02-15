@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8" />
+   <title>GTA VI UI Ideas</title>
+   <link rel="stylesheet" href="vice-ui.css" media="all" />
+   <link rel="stylesheet" href="font.css" media="all" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+</head>
+<body>
+
+   <div class="container">
+      <div class="text">
+         <p>There is quite a bit going on in this game, as with any other respectable open world game. However, the game's HUD either displays information in a very unclear way, or the wrong information period. The minimap is semitransparent, so sometimes it's hard to see things. The health & armor bar next to it are really small. The weapons and vehicle stats are represented by a bar graph with no numbers.  Sometimes the stats are wrong, as shown on people's Youtube videos. There are numerous other issues, too.
+            <br />
+            <br />
+            A solution would be a different look for the map & health elements that are easier to see. The cars should make a speedometer & odometer pop up (when in 3rd person). The stats should include numbers for easier comparison. Also, I consolidated stats in general since they aren't fun to wade through, and GTA has excessive stats. Some of them serve little to no purpose, such as lung capacity (the game is almost never underwater).
+         </p>
+      </div>
+      <section class="offset">
+         <img src="svgs/chars/primero.svg" alt="" class="char" />
+         <div class="contracted">
+            <div class="choose">
+               <p>Choose a Category</p>
+               <img src="svgs/arrow-down.svg" alt="" />
+            </div>
+            <ul class="expanded invisible">
+               <li class="item1 chosen">
+                  <p>Characters</p>
+               </li>
+               <li class="item2">
+                  <p>Weapons</p>
+               </li>
+               <li class="item3">
+                  <p>Vehicles</p>
+               </li>
+            </ul>
+         </div>
+         <div class="prev">
+            <img src="svgs/arrow-up.svg" alt="" />
+         </div>
+         <div class="next">
+            <img src="svgs/arrow-up.svg" alt="" />
+         </div>
+         <ul class="graph visible characters">
+            <li class="row1">
+               <p class="name"></p>
+               <div class="amount">
+                  <div class="bar"></div>
+               </div>
+               <p class="number"></p>
+            </li>
+            <li class="row2">
+               <p class="name"></p>
+               <div class="amount">
+                  <div class="bar"></div>
+               </div>
+               <p class="number"></p>
+            </li>
+            <li class="row3">
+               <p class="name"></p>
+               <div class="amount">
+                  <div class="bar"></div>
+               </div>
+               <p class="number"></p>
+            </li>
+         </ul>
+      </section>
+
+
+   </div>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+   <script src="vice-ui.js"></script>
+</body>
+</html>

@@ -1,0 +1,341 @@
+* {
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+}
+
+body {
+   background: url(http://i.imgur.com/fJoYD6W.jpg)no-repeat center center fixed;
+   background-size: cover;
+   height: 100vh;
+   width: 100vw;
+}
+
+.container {
+   height: 100vh;
+   width: 100vw;
+}
+
+.text {
+   height: 100%;
+   width: 50%;
+   color: white;
+   display: block;
+   text-align: center;
+   left: 0%;
+   margin: auto;
+   font-family: "Arial";
+   font-size: 1.25vw;
+   line-height: 2vw;
+   position: absolute;
+   background: rgba(0,0,0,0.5);
+}
+
+.text p {
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   position: absolute;
+   margin: auto;
+   width: 90%;
+}
+
+.offset {
+   position: absolute;
+   right: 1%;
+   height: 100%;
+   width: 48%;
+   margin: 0 auto;
+   overflow: hidden;
+}
+
+.contracted {
+   position: absolute;
+   margin: auto;
+   left: 0;
+   right: 0;
+   top: 7.5%;
+   height: 10%;
+   width: 60%;
+   background-color: rgba(0,0,0,0.5);
+   transition: height 0.3s;
+   color: white;
+   font-size: 3.5vw;
+   font-family: 'signpaintermedium';
+   cursor: pointer;
+   overflow: hidden;
+}
+
+.choose {
+   position: relative;
+   height: 10vh;
+}
+
+.choose p {
+   position: absolute;
+   left: 5%;
+   top: 50%;
+   transform: translateY(-50%);
+}
+
+.choose img {
+   width: 10%;
+   position: absolute;
+   right: 10%;
+   top: 50%;
+   transform: translateY(-50%);
+}
+
+.expanded {
+   width: 100%;
+   position: relative;
+   text-align: center;
+   transition-property: opacity, visibility;
+   transition-duration: 0.5s;
+}
+
+.item1 {
+   margin-top: 5%;
+}
+
+.item2, .item3 {
+   margin-top: 1.5%;
+}
+
+.expanded li {
+   height: 8vh;
+   width: 100%;
+   line-height: 9vh;
+}
+
+.prev {
+   background: rgba(0,0,0,0.5);
+   height: 10vh;
+   width: 4vw;
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   left: 0;
+   cursor: pointer;
+}
+
+.prev img {
+   transform: rotate(-90deg) translateX(50%);
+   width: 85%;
+   position: absolute;
+   top: 50%;
+}
+
+.next {
+   background: rgba(0,0,0,0.5);
+   height: 10vh;
+   width: 4vw;
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   right: 0;
+   cursor: pointer;
+}
+
+.next img {
+   transform: rotate(90deg) translateX(-50%);
+   width: 85%;
+   margin: 0 auto;
+   position: absolute;
+   top: 50%;
+   right: 0;
+}
+
+.graph {
+   height: 30%;
+   width: 60%;
+   background-color: rgba(0,0,0,0.5);
+   position: absolute;
+   font-family: 'san';
+   text-align: center;
+   transition-property: opacity, visibility;
+   transition-duration: 0.3s;
+}
+
+.carsguns {
+   margin: auto;
+   left: 0;
+   right: 0;
+   top: 25%;
+}
+
+.characters {
+   right: 10%;
+   top: 50%;
+   transform: translateY(-50%);
+   width: 50%;
+}
+
+.graph li {
+   position: absolute;
+   width: 100%;
+   height: 25%;
+   font-size: 1.5vw;
+   color: white;
+}
+
+.row1 {
+   top: 10%;
+   transform: translateY(-10%);
+}
+
+.row2 {
+   top: 50%;
+   transform: translateY(-50%);
+}
+
+.row3 {
+   top: 90%;
+   transform: translateY(-90%);
+}
+
+.name {
+   position: absolute;
+   left: 0;
+   width: 30%;
+   top: 50%;
+   transform: translateY(-50%);
+}
+
+.amount {
+   height: 100%;
+   width: 50%;
+   left: 33%;
+   position: absolute;
+}
+
+.bar {
+   position: relative;
+   height: 20%;
+   background: white;
+   top: 50%;
+   transform: translateY(-50%);
+   transition: 0.6s width;
+}
+
+.row1 .bar {
+   width: 50%;
+}
+
+.row2 .bar {
+   width: 20%;
+}
+
+.row3 .bar {
+   width: 100%;
+}
+
+
+
+.number {
+   position: absolute;
+   width: 15%;
+   right: 0;
+   top: 50%;
+   transform: translateY(-50%);
+}
+
+.car {
+   position: absolute;
+   margin: auto;
+   left: 0;
+   right: 0;
+   width: 100%;
+   bottom: 10%;
+   transform: translateY(10%);
+}
+
+.char {
+   position: absolute;
+   height: 80%;
+   left: 5%;
+   bottom: 10%;
+   transform: translateY(10%)
+}
+
+.visible {
+   opacity: 1;
+   visibility: visible;
+}
+
+.invisible {
+   opacity: 0;
+   visibility: hidden;
+}
+
+.chosen {
+   background: rgba(255,255,255, 0.5);
+}
+
+@media screen and (max-width:900px) {
+   body {
+      background: url(../images/bgs/mobile-bg.jpg);
+   }
+   .text {
+      position: relative;
+      height: auto;
+      width: 100%;
+      background: none;
+      font-size: 5vw;
+      line-height: 8vw;
+   }
+
+   .text p {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: translate(0);
+      margin-top: 10%;
+   }
+   .offset {
+      width: 100%;
+      right: 0;
+      position: relative;
+      height: 200vw;
+   }
+   .char {
+      margin: auto;
+      left: 0;
+      right: 0;
+   }
+   .contracted {
+      width: 80%;
+      font-size: 9.5vw;
+   }
+   .graph {
+      width: 85%;
+      margin: auto;
+      left: 0;
+      right: 0;
+      top: 90%;
+      transform: translateY(-90%);
+      background-color: rgba(0, 0, 0, 0.75);
+   }
+
+   .prev, .next {
+      width: 15vw;
+      height: 20vw;
+   }
+
+   .choose {
+      height: 20vw;
+   }
+   .expanded li {
+      height: 16vw;
+      width: 100%;
+   }
+   .graph li {
+      font-size: 5.5vw;
+      line-height: 7vw;
+   }
+   .car {
+      bottom: auto;
+      top: 30%;
+      transform: translateY(-30%);
+   }
+}
